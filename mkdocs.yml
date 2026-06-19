@@ -1,0 +1,93 @@
+site_name: Multimodal Paper Notes
+site_description: A structured research notebook for unified multimodal models, generation, and vision-language systems.
+site_author: Yoho
+site_url: https://YaohouF.github.io/paper-notes/
+repo_url: https://github.com/YaohouF/paper-notes
+repo_name: YaohouF/paper-notes
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Papers:
+      - SenseNova-U1:
+          - Reading Guide: papers/sensenova-u1/index.md
+          - Overview: papers/sensenova-u1/00_overview.md
+          - Model Architecture: papers/sensenova-u1/01_model_architecture.md
+          - Data Construction: papers/sensenova-u1/02_data_construction.md
+          - Training Recipe: papers/sensenova-u1/03_training_recipe.md
+          - Paper-Code Crosscheck: papers/sensenova-u1/04_paper_code_crosscheck.md
+          - Reproducibility Gaps: papers/sensenova-u1/05_reproducibility_gaps.md
+      - TUNA-2:
+          - Reading Guide: papers/tuna-2/index.md
+          - Overview: papers/tuna-2/00_overview.md
+          - Model Architecture: papers/tuna-2/01_model_architecture.md
+          - Data Construction: papers/tuna-2/02_data_construction.md
+          - Training Recipe: papers/tuna-2/03_training_recipe.md
+          - Paper-Code Crosscheck: papers/tuna-2/04_paper_code_crosscheck.md
+          - Reproducibility Gaps: papers/tuna-2/05_reproducibility_gaps.md
+  - Concepts:
+      - Concept Map: concepts/index.md
+      - Native Unified Models: concepts/native-unified-model.md
+      - Mixture-of-Transformers: concepts/mixture-of-transformers.md
+      - Pixel-Space Flow Matching: concepts/pixel-space-flow-matching.md
+      - Native RoPE: concepts/native-rope.md
+      - Dynamic Noise Scale: concepts/dynamic-noise-scale.md
+  - Comparisons:
+      - Overview: comparisons/index.md
+      - TUNA-2 vs SenseNova-U1: comparisons/tuna-2-vs-sensenova-u1.md

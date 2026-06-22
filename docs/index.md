@@ -9,6 +9,7 @@
 | [HiDream-O1-Image](papers/hidream-o1-image/index.md) | Pixel-level Unified Transformer, Qwen3-VL initialized raw-pixel generation | 第一版完整笔记 |
 | [SenseNova-U1](papers/sensenova-u1/index.md) | Native unified understanding + generation, NEO-unify, MoT | 第一版完整笔记 |
 | [TUNA-2](papers/tuna-2/index.md) | Pixel embeddings, VAE-free / encoder-free unified model | 已迁入 |
+| [FD-loss](papers/class-to-image/fd-loss/index.md) | Class-to-image post-training, representation Fréchet loss | 第一版完整笔记 |
 
 ## 推荐阅读方式
 
@@ -37,7 +38,8 @@ Paper index
 
 ```text
 papers/
-  每篇论文的完整精读笔记
+  multimodal / text-to-image 论文
+  class-to-image 论文
 
 concepts/
   跨论文复用的概念，比如 MoT、Native RoPE、Flow Matching
@@ -60,6 +62,19 @@ flowchart LR
   C1["TUNA-2"] --> C
   C2["SenseNova-U1"] --> C
   C3["HiDream-O1-Image"] --> C
+```
+
+## 新增主线：Class-to-Image Generation
+
+```mermaid
+flowchart LR
+  A["Pretrained class-conditioned generator"] --> B["Post-training objective"]
+  B --> C["Representation FD-loss"]
+  C --> D["Improved one-step ImageNet generator"]
+
+  C1["FID / FD as metric"] --> C
+  C2["Queue or EMA population stats"] --> C
+  C3["Frozen representation models"] --> C
 ```
 
 ## 后续维护模板

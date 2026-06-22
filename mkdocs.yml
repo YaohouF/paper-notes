@@ -65,30 +65,40 @@ extra_javascript:
 nav:
   - Home: index.md
   - Papers:
-      - HiDream-O1-Image:
-          - Reading Guide: papers/hidream-o1-image/index.md
-          - Overview: papers/hidream-o1-image/00_overview.md
-          - Model Architecture: papers/hidream-o1-image/01_model_architecture.md
-          - Data Construction: papers/hidream-o1-image/02_data_construction.md
-          - Training Recipe: papers/hidream-o1-image/03_training_recipe.md
-          - Paper-Code Crosscheck: papers/hidream-o1-image/04_paper_code_crosscheck.md
-          - Reproducibility Gaps: papers/hidream-o1-image/05_reproducibility_gaps.md
-      - SenseNova-U1:
-          - Reading Guide: papers/sensenova-u1/index.md
-          - Overview: papers/sensenova-u1/00_overview.md
-          - Model Architecture: papers/sensenova-u1/01_model_architecture.md
-          - Data Construction: papers/sensenova-u1/02_data_construction.md
-          - Training Recipe: papers/sensenova-u1/03_training_recipe.md
-          - Paper-Code Crosscheck: papers/sensenova-u1/04_paper_code_crosscheck.md
-          - Reproducibility Gaps: papers/sensenova-u1/05_reproducibility_gaps.md
-      - TUNA-2:
-          - Reading Guide: papers/tuna-2/index.md
-          - Overview: papers/tuna-2/00_overview.md
-          - Model Architecture: papers/tuna-2/01_model_architecture.md
-          - Data Construction: papers/tuna-2/02_data_construction.md
-          - Training Recipe: papers/tuna-2/03_training_recipe.md
-          - Paper-Code Crosscheck: papers/tuna-2/04_paper_code_crosscheck.md
-          - Reproducibility Gaps: papers/tuna-2/05_reproducibility_gaps.md
+      - Multimodal / Text-to-Image:
+          - HiDream-O1-Image:
+              - Reading Guide: papers/hidream-o1-image/index.md
+              - Overview: papers/hidream-o1-image/00_overview.md
+              - Model Architecture: papers/hidream-o1-image/01_model_architecture.md
+              - Data Construction: papers/hidream-o1-image/02_data_construction.md
+              - Training Recipe: papers/hidream-o1-image/03_training_recipe.md
+              - Paper-Code Crosscheck: papers/hidream-o1-image/04_paper_code_crosscheck.md
+              - Reproducibility Gaps: papers/hidream-o1-image/05_reproducibility_gaps.md
+          - SenseNova-U1:
+              - Reading Guide: papers/sensenova-u1/index.md
+              - Overview: papers/sensenova-u1/00_overview.md
+              - Model Architecture: papers/sensenova-u1/01_model_architecture.md
+              - Data Construction: papers/sensenova-u1/02_data_construction.md
+              - Training Recipe: papers/sensenova-u1/03_training_recipe.md
+              - Paper-Code Crosscheck: papers/sensenova-u1/04_paper_code_crosscheck.md
+              - Reproducibility Gaps: papers/sensenova-u1/05_reproducibility_gaps.md
+          - TUNA-2:
+              - Reading Guide: papers/tuna-2/index.md
+              - Overview: papers/tuna-2/00_overview.md
+              - Model Architecture: papers/tuna-2/01_model_architecture.md
+              - Data Construction: papers/tuna-2/02_data_construction.md
+              - Training Recipe: papers/tuna-2/03_training_recipe.md
+              - Paper-Code Crosscheck: papers/tuna-2/04_paper_code_crosscheck.md
+              - Reproducibility Gaps: papers/tuna-2/05_reproducibility_gaps.md
+      - Class-to-Image:
+          - FD-loss:
+              - Reading Guide: papers/class-to-image/fd-loss/index.md
+              - Overview: papers/class-to-image/fd-loss/00_overview.md
+              - Method and Loss: papers/class-to-image/fd-loss/01_method_and_loss.md
+              - Data and Task Setup: papers/class-to-image/fd-loss/02_data_and_task_setup.md
+              - Training Recipe: papers/class-to-image/fd-loss/03_training_recipe.md
+              - Paper-Code Crosscheck: papers/class-to-image/fd-loss/04_paper_code_crosscheck.md
+              - Reproducibility Gaps: papers/class-to-image/fd-loss/05_reproducibility_gaps.md
   - Concepts:
       - Concept Map: concepts/index.md
       - Native Unified Models: concepts/native-unified-model.md

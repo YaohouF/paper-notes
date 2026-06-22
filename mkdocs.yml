@@ -65,6 +65,14 @@ extra_javascript:
 nav:
   - Home: index.md
   - Papers:
+      - HiDream-O1-Image:
+          - Reading Guide: papers/hidream-o1-image/index.md
+          - Overview: papers/hidream-o1-image/00_overview.md
+          - Model Architecture: papers/hidream-o1-image/01_model_architecture.md
+          - Data Construction: papers/hidream-o1-image/02_data_construction.md
+          - Training Recipe: papers/hidream-o1-image/03_training_recipe.md
+          - Paper-Code Crosscheck: papers/hidream-o1-image/04_paper_code_crosscheck.md
+          - Reproducibility Gaps: papers/hidream-o1-image/05_reproducibility_gaps.md
       - SenseNova-U1:
           - Reading Guide: papers/sensenova-u1/index.md
           - Overview: papers/sensenova-u1/00_overview.md
@@ -91,3 +99,4 @@ nav:
   - Comparisons:
       - Overview: comparisons/index.md
       - TUNA-2 vs SenseNova-U1: comparisons/tuna-2-vs-sensenova-u1.md
+      - TUNA-2 vs SenseNova-U1 vs HiDream-O1-Image: comparisons/tuna-2-vs-sensenova-u1-vs-hidream.md

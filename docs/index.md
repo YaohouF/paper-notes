@@ -6,6 +6,7 @@
 
 | Paper | Topic | Status |
 |---|---|---|
+| [HiDream-O1-Image](papers/hidream-o1-image/index.md) | Pixel-level Unified Transformer, Qwen3-VL initialized raw-pixel generation | 第一版完整笔记 |
 | [SenseNova-U1](papers/sensenova-u1/index.md) | Native unified understanding + generation, NEO-unify, MoT | 第一版完整笔记 |
 | [TUNA-2](papers/tuna-2/index.md) | Pixel embeddings, VAE-free / encoder-free unified model | 已迁入 |
 
@@ -58,6 +59,7 @@ flowchart LR
 
   C1["TUNA-2"] --> C
   C2["SenseNova-U1"] --> C
+  C3["HiDream-O1-Image"] --> C
 ```
 
 ## 后续维护模板
@@ -86,4 +88,3 @@ docs/concepts/<concept-name>.md
 ```text
 docs/comparisons/<paper-a>-vs-<paper-b>.md
 ```
-

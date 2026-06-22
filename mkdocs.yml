@@ -99,6 +99,14 @@ nav:
               - Training Recipe: papers/class-to-image/fd-loss/03_training_recipe.md
               - Paper-Code Crosscheck: papers/class-to-image/fd-loss/04_paper_code_crosscheck.md
               - Reproducibility Gaps: papers/class-to-image/fd-loss/05_reproducibility_gaps.md
+  - Projects:
+      - DINOv3 + JiT Generation:
+          - Reading Guide: projects/dinov3-jit-generation/index.md
+          - Overview: projects/dinov3-jit-generation/00_overview.md
+          - Pretraining Recipe: projects/dinov3-jit-generation/01_pretraining_recipe.md
+          - Finetuning Architecture: projects/dinov3-jit-generation/02_finetuning_architecture.md
+          - Conditioning Design: projects/dinov3-jit-generation/03_conditioning_design.md
+          - Ablation Log and Open Questions: projects/dinov3-jit-generation/04_ablation_log.md
   - Concepts:
       - Concept Map: concepts/index.md
       - Native Unified Models: concepts/native-unified-model.md

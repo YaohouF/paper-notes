@@ -10,6 +10,7 @@
 | [SenseNova-U1](papers/sensenova-u1/index.md) | Native unified understanding + generation, NEO-unify, MoT | 第一版完整笔记 |
 | [TUNA-2](papers/tuna-2/index.md) | Pixel embeddings, VAE-free / encoder-free unified model | 已迁入 |
 | [FD-loss](papers/class-to-image/fd-loss/index.md) | Class-to-image post-training, representation Fréchet loss | 第一版完整笔记 |
+| [DINOv3 + JiT Generation Project](projects/dinov3-jit-generation/index.md) | Time-conditioned DINOv3 encoder + JiT denoising + pixel-space generation finetune | 项目方法快照 |
 
 ## 推荐阅读方式
 
@@ -76,6 +77,23 @@ flowchart LR
   C2["Queue or EMA population stats"] --> C
   C3["Frozen representation models"] --> C
 ```
+
+## 进行中项目：DINOv3 + JiT Generation
+
+```mermaid
+flowchart LR
+  A["DINOv3 SSL encoder"] --> B["time-conditioned pretraining"]
+  B --> C["JiT denoising auxiliary"]
+  C --> D["generation-friendly encoder tokens"]
+  D --> E["skip-connected denoising decoder"]
+  E --> F["ImageNet class-to-image generation"]
+
+  T["time tokens"] --> D
+  Y["class tokens / CLS+y"] --> D
+  S["storage tokens removed"] --> E
+```
+
+这条线不是论文对比，而是当前自己的研究项目记录。重点是维护当前方法语义、代码实现、已验证经验和后续可扩展方向。
 
 ## 后续维护模板
 

@@ -60,6 +60,9 @@ docs/
     index.md
     tuna-2-vs-sensenova-u1.md
     tuna-2-vs-sensenova-u1-vs-hidream.md
+
+  projects/
+    dinov3-jit-generation/
 ```
 
 目前有两条主要论文线：
@@ -72,6 +75,9 @@ docs/
 
 2. Class-to-Image
    - FD-loss
+
+3. Ongoing Research Projects
+   - DINOv3 + JiT Generation
 ```
 
 ## 3. 写作语言和风格
@@ -275,6 +281,8 @@ nav:
           - ...
       - Class-to-Image:
           - ...
+  - Projects:
+      - ...
   - Concepts:
       - ...
   - Comparisons:
@@ -332,6 +340,23 @@ TUNA-2 vs SenseNova-U1 vs HiDream-O1-Image
 ```
 
 Class-to-image 大类目前不强制互相比较。除非用户明确要求，或几篇论文形成清晰对照，否则不用为每篇新增 comparison。
+
+### Projects
+
+当内容不是外部论文，而是用户自己的 ongoing research project 时，放入：
+
+```text
+docs/projects/<project-slug>/
+```
+
+Projects 页面应该明确区分：
+
+- 当前 confirmed implementation；
+- 已验证 empirical findings；
+- current preferred route；
+- 仍开放的 ablation axes / research questions。
+
+不要把未定型实验写成最终方法结论。
 
 ## 10. 构建和本地预览
 
@@ -435,6 +460,7 @@ Could not resolve hostname github.com
 | SenseNova-U1 | Multimodal / Text-to-Image | Native unified understanding + generation, NEO-unify, MoT |
 | HiDream-O1-Image | Multimodal / Text-to-Image | Pixel-level Unified Transformer, Qwen3-VL initialized raw-pixel generation |
 | FD-loss | Class-to-Image | Representation Fréchet loss as post-training objective |
+| DINOv3 + JiT Generation | Project | Time-conditioned DINOv3 encoder + JiT denoising + pixel-space generation finetune |
 
 ## 15. Commit message convention
 
@@ -461,4 +487,3 @@ Update paper notes maintenance guide
 ```
 
 这套站点的价值在于“论文理解 + 代码核对 + 复现判断”三者同时存在。
-
